@@ -1,5 +1,5 @@
 # deductible-sim
-Deductable simulator for auto insurance with adjustable parameters.
+Deductible simulator for auto insurance with adjustable parameters.
 
 ## About
 This project models insurance claims using Poisson frequency and exponential severity models.
@@ -11,4 +11,4 @@ It compares total losses with and without deductibles. It further allows compari
   - Deductable impact analysis and profit margin
 
 ## How to Run
-deductible-simulator.ipynb
+[deductible-simulator.ipynb](deductible-simulator.ipynb)
