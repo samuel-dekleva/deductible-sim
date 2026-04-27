@@ -15,4 +15,4 @@ The model compares total losses with and without deductibles, and allows users t
 
 Open and run the notebook:
 
-[deductible-simulator.ipynb](deductible-simulator.ipynb)
+[deductible_simulator.ipynb](deductible_simulator.ipynb)
