@@ -1,6 +1,16 @@
 import numpy as np
 import pandas as pd
 
+"""
+Deductible Simulation Model
+
+Simulates insurance claims using:
+- Poisson frequency
+- Exponential severity
+
+Evaluates impact of deductibles on total losses and profitability.
+"""
+
 print("Welcome to this deductible calculator! This is to provide an estimate based on changing accident numbers.")
 
 print()
