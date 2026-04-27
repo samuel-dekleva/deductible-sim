@@ -6,6 +6,8 @@ Claim frequency is modeled with a Poisson distribution, and claim severity with 
 
 The model compares total losses with and without deductibles, and allows users to explore how changes in frequency and severity impact profitability.
 
+To see a sample output, click [here](sample-output).
+
 ## Features
 - Adjustable frequency and severity
 - Scalable Monte Carlo, actuarial-style simulation
