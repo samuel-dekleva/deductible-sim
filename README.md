@@ -11,3 +11,4 @@ It compares total losses with and without deductibles. It further allows compari
   - Deductable impact analysis and profit margin
 
 ## How to Run
+deductible-simulator.ipynb
