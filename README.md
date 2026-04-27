@@ -22,7 +22,7 @@ This model explores how different deductible levels impact:
 
 ## How to Run
 
-Open and run the notebook:
+- Open and run the notebook:
 [deductible_simulator.ipynb](deductible_simulator.ipynb)
-Or, you can open in Python, and you can use the script to do full simulation runs:
+- Or, you can open in Python, and you can use the script to do full simulation runs:
 [deductible_simulation.py](deductible_simulation.py)
