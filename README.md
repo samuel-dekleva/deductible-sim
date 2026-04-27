@@ -20,6 +20,11 @@ This model explores how different deductible levels impact:
 - Loss distributions
 - Probability of profitability (percentage of simulations where adding the deductible yields a more favorable outcome for the company)
 
+## Interpretation
+
+- A higher deductible reduces insurer payouts but may increase variability.
+- The model helps quantify trade-offs between expected savings and risk.
+
 ## How to Run
 
 - Open and run the notebook:
