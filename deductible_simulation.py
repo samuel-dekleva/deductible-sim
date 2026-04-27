@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-import time
 
 print("Welcome to this deductible calculator! This is to provide an estimate based on changing accident numbers.")
 
