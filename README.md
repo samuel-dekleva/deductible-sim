@@ -5,13 +5,18 @@ This project simulates insurance claim costs using a Monte Carlo framework.
 
 The model compares total losses with and without deductibles, and allows users to explore how changes in frequency and severity impact profitability.
 
-To see a sample output as seen when the code is run, click [here](sample-output.png).
+For a sample output as seen when the code is run, click [here](sample-output.png).
 
 ## Explicit Model Assumptions
 - Throughout, we assume independence of claims.
 - We also assume claim frequency is modeled using a Poisson distribution, and claim severity is modeled using an exponential distribution.
 
 ## Example Output
+
+### Key Results
+- A deductible of approximately 1.5% of the mean claim severity reduces overall expected payouts by 0.9%.
+- Probability of turning a profit remained approximately 50%.
+- Tail risk very slightly lowered.
 
 ### Baseline Scenario
 First, we run with no deductible.
@@ -59,25 +64,21 @@ Therefore, the probability is indicative of the distribution, rather than on a p
 | Max          | 46,808.93     | 
 
 The probability of the company making more money next year after adding a $20.00 deductible is calculated to be 50.50%. 
-The chances barely improved (from coin flip odds of 50%) due to the very small size of the deductible.
-This code allows users to experiment with different sizes of deductible relative to the mean claim size.
+This number is nearly unchanged due to the comparatively small size of the deductible.
 
 In the above example, all variables were held constant. Assume instead there are 10% more accidents with 10% more severity. 
-How does the required deductible to make a profit change? This code helps users answer this question with some degree of confidence.
+What is the required deductible to make the chances 50% of turning a profit? 
 
 ## Features
 - Adjustable frequency and severity
 - Scalable Monte Carlo, actuarial-style simulation
 - Deductible impact analysis and profit margin estimation
+- Users may experiment with different sizes of deductible relative to the mean claim size.
 
 ## Motivation
 - Insurance companies must balance profitability with changing frequency and severity on a year-to-year basis. 
-Deductibles play a key role in shifting risk between insurer and policyholder.
 
-This model explores how different deductible levels impact:
-- Total claim payouts
-- Loss distributions
-- Probability of profit (percentage of simulations where adding the deductible yields a more favorable outcome for the company)
+Deductibles play a key role in shifting risk between insurer and policyholder.
 
 ## Interpretation
 
