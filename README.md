@@ -2,11 +2,14 @@
 
 ## About
 This project simulates insurance claim costs using a Monte Carlo framework. 
-Claim frequency is modeled with a Poisson distribution, and claim severity with an exponential distribution.
 
 The model compares total losses with and without deductibles, and allows users to explore how changes in frequency and severity impact profitability.
 
-To see a sample output, click [here](sample-output.png).
+To see a sample output as seen when the code is run, click [here](sample-output.png).
+
+## Explicit Model Assumptions
+- Throughout, we assume independence of claims.
+- We also assume claim frequency is modeled using a Poisson distribution, and claim severity is modeled using an exponential distribution.
 
 ## Example Output
 
@@ -14,7 +17,7 @@ To see a sample output, click [here](sample-output.png).
 First, we run with no deductible.
 Assume there are 100 policyholders, each with risk of accident modeled by a Poisson distribution with mean 0.14. 
 Each accident's severity is modeled by an exponential distribution with mean 1500.
-1000 years' worth of simulations produced the following data.
+1000 years' worth of simulations produce the following data.
 
 | Metric   | Accidents | Sum       | Average  | 95th Pctle | 99th Pctle |
 |----------|----------:|----------:|---------:|-----------:|-----------:|
@@ -43,7 +46,7 @@ We now introduce a deductible of $20.00, keeping all other variables constant, a
 ### Analysis
 
 Note: The probability of profit is calculated using two separate simulations.
-Therefore, the probability is indicative of the distribution, rather than on a case-by-case basis.
+Therefore, the probability is indicative of the distribution, rather than on a paired-off basis.
 
 | Metric        | Profit   | 
 |--------------|----------:|
@@ -57,6 +60,9 @@ Therefore, the probability is indicative of the distribution, rather than on a c
 
 The probability of the company making more money next year after adding a $20 deductible is calculated to be 50.50%. The chances barely improved (from coin flip odds of 50%) due to the 
 small size of the deductible (about 1.3% of the mean claim size).
+This would not be a large enough difference for a company to go forward with this proposition.
+
+In the above example, all variables were held constant. Assume instead there are 10% more accidents with 10% more severity. How does the deductible change? This code helps to answer this question with a degree of confidence.
 
 ## Features
 - Adjustable frequency and severity
