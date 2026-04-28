@@ -15,7 +15,7 @@ For a sample output as seen when the code is run, click [here](sample-output.png
 
 ### Key Results
 - A deductible of approximately 1.5% of the mean claim severity reduces overall expected payouts by 0.9%.
-- Probability of turning a profit remained approximately 50%.
+- The estimated probability of profit remains approximately 50% under this scenario.
 - Tail risk very slightly lowered.
 
 ### Baseline Scenario
@@ -51,7 +51,7 @@ We now introduce a deductible of $20.00 (about 1.3% of the mean claim size of $1
 ### Analysis
 
 Note: The probability of profit is calculated using two separate simulations.
-Therefore, the probability is indicative of the distribution, rather than on a paired-off basis.
+This probability therefore reflects independent simulations rather than paired scenario outcomes.
 
 | Metric        | Profit   | 
 |--------------|----------:|
@@ -70,10 +70,10 @@ In the above example, all variables were held constant. Assume instead there are
 What is the required deductible to make the chances 50% of turning a profit? 
 
 ## Features
-- Adjustable frequency and severity
 - Scalable Monte Carlo, actuarial-style simulation
 - Deductible impact analysis and profit margin estimation
 - Users may experiment with different sizes of deductible relative to the mean claim size.
+- Users may analyze the impact of frequency and severity shifts.
 
 ## Motivation
 - Insurance companies must balance profitability with changing frequency and severity on a year-to-year basis. 
